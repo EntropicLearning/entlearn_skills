@@ -37,7 +37,7 @@ Build an immutable classification or regression `Recipe`, then pass it to the ma
 
 ### 4. Fit robustly through the adapter
 
-Construct `EONClassifier(recipe, ...)` or `EONRegressor(recipe, ...)` as [using estimators](https://entropiclearning.github.io/entlearn/0.1.0/guide/estimators/) describes. Scale continuous features and regression targets, preserve DataFrame column meanings where available, and declare categorical features through the adapter. Use multiple initialisations and make their randomness reproducible by setting `random_state`. Decide deliberately whether supplied `sample_weight` should stay fixed or seed learned instance weights ([sample and class weights](https://entropiclearning.github.io/entlearn/0.1.0/guide/estimators/#sample-and-class-weights)).
+Construct `EONClassifier(recipe, ...)` or `EONRegressor(recipe, ...)` as [using estimators](https://entropiclearning.github.io/entlearn/0.1.0/guide/estimators/) describes. Scale continuous features and regression targets, preserve DataFrame column meanings where available, and declare categorical features through the adapter. Use multiple initialisations and make their randomness reproducible by setting `random_state`. Decide deliberately whether supplied `sample_weight` should stay fixed or seed learned instance weights ([sample and class weights](https://entropiclearning.github.io/entlearn/0.1.0/guide/estimators/#sample-and-class-weights), [instance weights](https://entropiclearning.github.io/entlearn/0.1.0/concepts/learning/#instance-weights)).
 
 Fit through the estimator API. Treat warnings, non-finite values, failure to converge, or unstable selection as evidence to investigate rather than suppress. Invoke `debugging-entlearn` for failed fits, numerical problems, unexpected staging, convergence or prediction behaviour. Invoke `tuning-entlearn` for hyperparameter search, initialisation selection, validation design or performance refinement.
 
@@ -53,7 +53,7 @@ Use `predict` (`predict_proba` for classification probabilities). Keep the fitte
 
 ### 6. Surface inspection options
 
-Mention the public estimator queries in [what each query measures](https://entropiclearning.github.io/entlearn/0.1.0/guide/interpreting/#what-each-query-measures) if they appear relevant, with `network_` as the fitted lower-level object, not the primary workflow.
+Mention the public estimator queries in [inlier percentiles and feature reports](https://entropiclearning.github.io/entlearn/0.1.0/guide/estimators/#inlier-percentiles-and-feature-reports) if they appear relevant, with `network_` as the fitted lower-level object, not the primary workflow.
 
 Invoke `interpreting-entlearn` when explaining these values, comparing fitted structure, interpreting reconstruction, weights or affiliations, or making scientific claims from a fit. Keep routine inspection on the estimator: reaching through `network_` to reproduce an adapter query loses the tabular mapping.
 

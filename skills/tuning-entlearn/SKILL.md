@@ -41,7 +41,8 @@ feature and instance weights by default, with finite `epsilon_D` and `epsilon_T`
 deliberately whether either should not be learned, and how supplied `sample_weight`
 should interact with `epsilon_T`
 ([a first experiment](https://entropiclearning.github.io/entlearn/0.1.0/guide/hyperparameters/#a-first-experiment),
-[sample and class weights](https://entropiclearning.github.io/entlearn/0.1.0/guide/estimators/#sample-and-class-weights)).
+[sample and class weights](https://entropiclearning.github.io/entlearn/0.1.0/guide/estimators/#sample-and-class-weights),
+[instance weights](https://entropiclearning.github.io/entlearn/0.1.0/concepts/learning/#instance-weights)).
 
 Use the fitted adapter with `GridSearchCV` or `RandomizedSearchCV`. `OptunaSearchCV`
 ([optional Optuna backend](https://entropiclearning.github.io/entlearn/0.1.0/guide/model_selection/#optional-optuna-backend))

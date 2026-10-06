@@ -41,7 +41,8 @@ Guidance statuses in this skill mean:
    - non-convergence at the iteration budget
      ([warnings](https://entropiclearning.github.io/entlearn/0.1.0/guide/troubleshooting/#warnings));
    - numerical sensitivity
-     ([scale, weights and hard assignments](https://entropiclearning.github.io/entlearn/0.1.0/guide/troubleshooting/#scale-weights-and-hard-assignments));
+     ([behaviour that may surprise you](https://entropiclearning.github.io/entlearn/0.1.0/guide/suitability/#behaviour-that-may-surprise-you),
+     [a first experiment](https://entropiclearning.github.io/entlearn/0.1.0/guide/hyperparameters/#a-first-experiment));
    - a valid fit with poor score or surprising predictions
      ([unstable or disappointing predictions](https://entropiclearning.github.io/entlearn/0.1.0/guide/troubleshooting/#unstable-or-disappointing-predictions),
      [fitting and prediction controls](https://entropiclearning.github.io/entlearn/0.1.0/guide/hyperparameters/#fitting-and-prediction-controls)).
